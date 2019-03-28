@@ -1,0 +1,22 @@
+<ul id="myList">
+  <li *ngFor="let cls of myclasses; let i=index"
+   id='s{{i}}'
+   (click) = 'onClickMe(i)'>
+    {{cls.songname}}
+    <div id='d{{i}}' class="gridArea">
+<section class="Details">
+  
+<strong class="sname">Song Name: </strong>{{cls.songname}}<br>
+<strong class="sartist">Artist: </strong>{{cls.artist}}<br>
+<strong class="sgenre">Genre: </strong>{{cls.genre}}<br>
+<strong class="syear">Year: </strong>{{cls.year}}<br>
+
+    </section><br><br>
+  <section class="Picture">
+
+<strong >Picture: </strong><img src="assets/images/{{cls.picture}}" width="5%">
+ 
+</section></div>
+
+</li>
+</ul>

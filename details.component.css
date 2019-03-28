@@ -1,0 +1,50 @@
+.divcss{
+    text-align: center;
+    text-decoration: black;
+    font-weight: bold;
+    font-size: 176%;
+}
+
+.gridArea {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-areas:
+	"Picture Details" ;
+	grid-gap: 5px;
+}
+.Details {grid-area: Details;}
+.Picture {grid-area: Picture;}
+
+.Details {
+	border: thick solid black;
+	padding: 0px 20px 0px 20px;
+	background-color: rgba(0,0,255, 0.25);
+	font-size: 1.25em;
+}
+.Picture {
+	border: thick solid black;
+	padding: 0px 20px 0px 20px;
+	background-color:rgba(43, 149, 236, 0.856);
+	font-size: 1.25em;
+	
+}
+
+
+
+@media screen and (orientation: landscape) {
+    .Details {font-size: 2em;
+    text-align: right;}
+    
+    .Picture {background-color:  rgb(253, 200, 181);
+    text-align: right;}
+    }
+    
+    @media screen and (orientation: portrait) {
+        
+        .Picture {background-color:  rgb(253, 200, 181);
+        }
+        .Details {font-size: 1em;
+            }
+            
+           
+    }
